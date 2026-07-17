@@ -1,3 +1,38 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+}
+
+header{
+    height: 20vh;
+    background-color: beige;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+}
+
+aside{
+    width: 30%;
+    background-color: pink;
+
+}
+
+main{
+    width: 70%;
+    background-color: azure;
+}
+
+footer{
+    height: 10vh;
+    background-color: #b00b69;
+}
 
 .testColor {
     color: blueviolet;
@@ -5,9 +40,4 @@
 
 .testColor > h1{
     color: black;
-}
-
-h1 {
-  color: navy;
-  margin-left: 20px;
 }
