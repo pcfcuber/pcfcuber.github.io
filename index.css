@@ -16,70 +16,76 @@ html {
 }
 
 body{
-    height: 100vh;
-    display: flex;
-    flex-direction:column;
+    margin: 0;
+    min-height: 100vh;
     background: var(--background);
     color: var(--text);
+}
+
+main{
+    display: block;
+    padding-top: 3.2rem;
 }
 
 h1 {
    color: #1A1A1A; 
 }
 
-ul {
+.navigation_bar{
+    background: var(--primary);
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.navigation_bar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background: var(--primary);
   display: flex;
   justify-content: center;
-
-}
+} 
 
 ul li a {
   display: block;
-  /*text-align: center;*/
   padding: 14px 16px;
   text-decoration: none;
+  color: var(--background)
 }
 
 ul li a:hover {
-  background-color: #5D1A72;
+  background-color: var(--primary-hover);
 }
 
-
 header{
-    height: 20vh;
+    padding: 3rem 2rem;
 }
 
 .container{
-    height: 70vh;
     display: flex;
+    min-height: 40rem;
 }
 
 aside{
     width: 30%;
-    background-color: pink;
-
+    background-color: var(--background);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
-main{
+.main-content{
     width: 70%;
-    background-color: azure;
+    background-color: var(--background);
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 footer{
-    height: 10vh;
+    padding: 0.5rem;
     background-color: #b00b69;
+    position: fixed;
+    bottom:0;
+    width: 100%;
 }
 
-.testColor {
-    color: blueviolet;
-}
-
-.testColor > h1{
-    color: black;
-}
 
